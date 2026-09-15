@@ -63,7 +63,7 @@ export function Footer({ onNav }: { onNav: (s: string) => void }) {
         <div className="border-t border-white/10 mx-6 flex flex-col md:flex-row md:items-center md:justify-between gap-1 md:gap-0 items-center py-4 md:py-3 text-center md:text-left">
           {/* Desktop: copyright left | Mobile: URL first, then copyright */}
           <span className="font-['Cal_Sans:Regular',sans-serif] text-[#6b6b6b] text-[12px] tracking-[0.5px] order-2 md:order-1">©2026 Primewavee</span>
-          <span className="font-['Cal_Sans:Regular',sans-serif] text-[#fcfaf5] text-[14px] order-1 md:order-2">primewave.online</span>
+          <span className="font-['Cal_Sans:Regular',sans-serif] text-[#fcfaf5] text-[14px] order-1 md:order-2">primewavee.online</span>
         </div>
       </div>
 
