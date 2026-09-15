@@ -14,6 +14,12 @@ import imgProject2 from "../assets/Works/flyrinzo.png";
 import imgProject3 from "../assets/Works/traclet.png";
 import imgWorksLoveville from "../assets/Works/loveville.png";
 import imgWorksTracman from "../assets/Works/tracman_mockup.png";
+import imgTracmanGallery from "../assets/Works/tracman_gallery.png";
+import imgTracmanChallenge0 from "../assets/Works/tracman_challenge0.png";
+import imgTracmanChallenge1 from "../assets/Works/tracman_challenge1.png";
+import imgTracmanApproach0 from "../assets/Works/tracman_approach0.jpg";
+import imgTracmanApproach1 from "../assets/Works/tracman_approach1.jpg";
+import imgTracmanSolutions from "../assets/Works/tracman_solutions.jpg";
 import imgTracletGallery from "../assets/Works/traclet_gallery.png";
 import imgTracletChallenge0 from "../assets/Works/traclet_challenge0.png";
 import imgTracletChallenge1 from "../assets/Works/traclet_challenge1.png";
@@ -279,11 +285,13 @@ export const testimonials = [
 
 export type ProjectDetail = {
   galleryImg: string;
+  galleryBg?: string;
   challengeImg0: string;
   challengeImg1: string;
   approachImg0: string;
   approachImg1: string;
   solutionsImg: string;
+  solutionsBg?: string;
   overviewHeading: string;
   overviewPara1: string;
   overviewPara2: string;
@@ -333,11 +341,13 @@ export const projectDetails: ProjectDetail[] = [
     solutionsPara2:
       "For property owners, the system delivers complete tools to handle buildings, individual units, resident profiles, and collection schedules through one connected application. Monetary capabilities like digital wallets, automated rent savings, transaction processing, and tenant services extend utility beyond baseline property discovery.\n\nBeyond individual views, the project established a scalable product framework across Habeep’s software family, building an adaptable foundation to accommodate upcoming features, system integrations, and long-term platform expansion.\n\nThe outcome provides an accessible, connected real estate environment that allows users to navigate residential tasks smoothly while supplying housing professionals with robust tools to scale operations.",
     galleryImg: imgHabeepGallery,
+    galleryBg: "#2C3640",
     challengeImg0: imgHabeepChallenge0,
     challengeImg1: imgHabeepChallenge1,
     approachImg0: imgHabeepApproach0,
     approachImg1: imgHabeepApproach1,
     solutionsImg: imgHabeepSolutions,
+    solutionsBg: "#2C3640",
   },
   {
     overviewHeading: "Making hotel operations feel effortless.",
@@ -366,12 +376,14 @@ export const projectDetails: ProjectDetail[] = [
       "The final result is a modern hospitality platform that brings hotel operations and guest experiences together through a cohesive, scalable design system.\n\nThe redesigned hotel admin platform gives teams a clearer way to manage bookings, rooms, employees, services, payments, and performance, while the guest app provides a more intuitive way to discover hotels, make reservations, and manage their stays.",
     solutionsPara2:
       "Beyond individual screens, the work established a consistent product experience across Tracman’s ecosystem, creating a foundation that supports new features, future integrations, and the continued growth of the platform.\n\nThe outcome is a more approachable and efficient digital experience that helps hotels operate with confidence and gives guests a smoother, more connected booking journey.",
-    galleryImg: imgDetailGallery,
-    challengeImg0: imgDetailChallenge0,
-    challengeImg1: imgDetailChallenge1,
-    approachImg0: imgDetailApproach0,
-    approachImg1: imgDetailApproach1,
-    solutionsImg: imgDetailSolutions,
+    galleryImg: imgTracmanGallery,
+    galleryBg: "#2C3640",
+    challengeImg0: imgTracmanChallenge0,
+    challengeImg1: imgTracmanChallenge1,
+    approachImg0: imgTracmanApproach0,
+    approachImg1: imgTracmanApproach1,
+    solutionsImg: imgTracmanSolutions,
+    solutionsBg: "#2C3640",
   },
   {
     overviewHeading: "Making social media growth feel effortless.",
