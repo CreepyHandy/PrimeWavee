@@ -69,15 +69,28 @@ export function WorkDetailPage({
           <div className="mb-16">
             {/* Gallery: full-width top + two side-by-side below, equal heights */}
             <div className="flex flex-col gap-3 mb-12">
-              <div className="w-full rounded-lg overflow-hidden h-[clamp(220px,32vw,420px)] bg-[#161412]">
-                <img src={detail.galleryImg} alt="" className="w-full h-full object-cover" />
+              <div 
+                className="w-full rounded-lg overflow-hidden flex items-center justify-center"
+                style={{ backgroundColor: detail.galleryBg || "#161412" }}
+              >
+                <img 
+                  src={detail.galleryImg} 
+                  alt="" 
+                  className="max-w-full w-auto h-auto object-contain select-none" 
+                />
               </div>
               <div className="grid grid-cols-2 gap-3">
-                <div className="rounded-lg overflow-hidden h-[clamp(220px,32vw,420px)] bg-[#161412]">
-                  <img src={detail.challengeImg0} alt="" className="w-full h-full object-cover" />
+                <div 
+                  className="rounded-lg overflow-hidden flex items-center justify-center"
+                  style={{ backgroundColor: detail.galleryBg || "#161412" }}
+                >
+                  <img src={detail.challengeImg0} alt="" className="w-full h-auto object-contain select-none" />
                 </div>
-                <div className="rounded-lg overflow-hidden h-[clamp(220px,32vw,420px)] bg-[#161412]">
-                  <img src={detail.challengeImg1} alt="" className="w-full h-full object-cover" />
+                <div 
+                  className="rounded-lg overflow-hidden flex items-center justify-center"
+                  style={{ backgroundColor: detail.galleryBg || "#161412" }}
+                >
+                  <img src={detail.challengeImg1} alt="" className="w-full h-auto object-contain select-none" />
                 </div>
               </div>
             </div>
@@ -100,11 +113,17 @@ export function WorkDetailPage({
           <div className="mb-16">
             <div className="flex flex-col gap-4 mb-12">
               <div className="grid grid-cols-2 gap-4">
-                <div className="rounded-lg overflow-hidden h-[clamp(160px,22vw,320px)] bg-[#161412]">
-                  <img src={detail.approachImg0} alt="" className="w-full h-full object-cover" />
+                <div 
+                  className="rounded-lg overflow-hidden flex items-center justify-center"
+                  style={{ backgroundColor: detail.galleryBg || "#161412" }}
+                >
+                  <img src={detail.approachImg0} alt="" className="w-full h-auto object-contain select-none" />
                 </div>
-                <div className="rounded-lg overflow-hidden h-[clamp(160px,22vw,320px)] bg-[#161412]">
-                  <img src={detail.approachImg1} alt="" className="w-full h-full object-cover" />
+                <div 
+                  className="rounded-lg overflow-hidden flex items-center justify-center"
+                  style={{ backgroundColor: detail.galleryBg || "#161412" }}
+                >
+                  <img src={detail.approachImg1} alt="" className="w-full h-auto object-contain select-none" />
                 </div>
               </div>
             </div>
@@ -124,8 +143,15 @@ export function WorkDetailPage({
 
           {/* Solutions — image above, two-col text below */}
           <div className="mb-20">
-            <div className="w-full rounded-lg overflow-hidden h-[clamp(220px,32vw,420px)] bg-[#161412] mb-12">
-              <img src={detail.solutionsImg} alt="" className="w-full h-full object-cover" />
+            <div 
+              className="w-full rounded-lg overflow-hidden flex items-center justify-center mb-12"
+              style={{ backgroundColor: detail.solutionsBg || "#161412" }}
+            >
+              <img 
+                src={detail.solutionsImg} 
+                alt="" 
+                className="w-full h-auto object-contain select-none" 
+              />
             </div>
             <div className="flex flex-col md:flex-row gap-10">
               <div className="md:flex-1 flex flex-col gap-4">
