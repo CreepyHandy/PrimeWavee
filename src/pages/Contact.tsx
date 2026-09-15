@@ -4,7 +4,12 @@ import { Footer } from "../components/common/Footer";
 function ContactIcon({ path, viewBox }: { path: string; viewBox: string }) {
   return (
     <div className="w-5 h-5 shrink-0 mt-0.5">
-      <svg viewBox={viewBox} fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+      <svg
+        viewBox={viewBox}
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-full h-full"
+      >
         <path d={path} fill="#b5ada4" />
       </svg>
     </div>
@@ -17,7 +22,6 @@ export function ContactPage({ onNav }: { onNav: (s: string) => void }) {
       <div className="max-w-[1440px] mx-auto px-6 md:px-20 pt-[clamp(80px,12vh,140px)] pb-24">
         <div className="max-w-[1120px] mx-auto">
           <div className="flex flex-col md:flex-row gap-16 md:gap-20">
-
             {/* Left — heading + description + CTA */}
             <div className="md:flex-[1] flex flex-col gap-10">
               <div>
@@ -31,7 +35,9 @@ export function ContactPage({ onNav }: { onNav: (s: string) => void }) {
               </div>
               <div className="flex flex-col gap-6">
                 <p className="font-['General_Sans:Regular',sans-serif] text-[#b5ada4] text-[18px] leading-[1.6] max-w-[460px]">
-                  Whether you're launching a startup or refreshing your brands, we'd love to hear about your vision. Tell us what you're building, and let's explore how we can help.
+                  Whether you're launching a startup or refreshing your brands,
+                  we'd love to hear about your vision. Tell us what you're
+                  building, and let's explore how we can help.
                 </p>
                 <div>
                   <button
@@ -48,11 +54,21 @@ export function ContactPage({ onNav }: { onNav: (s: string) => void }) {
             <div className="md:flex-[1] flex flex-col gap-10 md:pt-2">
               {/* Email */}
               <div className="flex gap-4 items-start">
-                <ContactIcon path={contactSvg.p10821740} viewBox="0 0 19.4952 14.9963" />
+                <ContactIcon
+                  path={contactSvg.p10821740}
+                  viewBox="0 0 19.4952 14.9963"
+                />
                 <div className="flex flex-col gap-1">
-                  <span className="font-['General_Sans:Regular',sans-serif] text-[#fcfaf5] text-[20px] leading-[1.3]">Email Us</span>
-                  <span className="font-['General_Sans:Regular',sans-serif] text-[#b5ada4] text-[16px] leading-[1.4]">Our team will get back to you within 24 hours.</span>
-                  <a href="mailto:primewavee1@gmail.com" className="font-['General_Sans:Regular',sans-serif] text-[#239cff] text-[16px] hover:underline">
+                  <span className="font-['General_Sans:Regular',sans-serif] text-[#fcfaf5] text-[20px] leading-[1.3]">
+                    Email Us
+                  </span>
+                  <span className="font-['General_Sans:Regular',sans-serif] text-[#b5ada4] text-[16px] leading-[1.4]">
+                    Our team will get back to you within 24 hours.
+                  </span>
+                  <a
+                    href="mailto:primewavee1@gmail.com"
+                    className="font-['General_Sans:Regular',sans-serif] text-[#239cff] text-[16px] hover:underline"
+                  >
                     primewavee1@gmail.com
                   </a>
                 </div>
@@ -63,11 +79,21 @@ export function ContactPage({ onNav }: { onNav: (s: string) => void }) {
 
               {/* Phone */}
               <div className="flex gap-4 items-start">
-                <ContactIcon path={contactSvg.p836c280} viewBox="0 0 18.7452 18.7452" />
+                <ContactIcon
+                  path={contactSvg.p836c280}
+                  viewBox="0 0 18.7452 18.7452"
+                />
                 <div className="flex flex-col gap-1">
-                  <span className="font-['General_Sans:Regular',sans-serif] text-[#fcfaf5] text-[20px] leading-[1.3]">Talk to Team</span>
-                  <span className="font-['General_Sans:Regular',sans-serif] text-[#b5ada4] text-[16px] leading-[1.4]">We're available Monday–Friday, 9 AM–6 PM.</span>
-                  <a href="tel:+2347043239289" className="font-['General_Sans:Regular',sans-serif] text-[#239cff] text-[16px] hover:underline">
+                  <span className="font-['General_Sans:Regular',sans-serif] text-[#fcfaf5] text-[20px] leading-[1.3]">
+                    Talk to Team
+                  </span>
+                  <span className="font-['General_Sans:Regular',sans-serif] text-[#b5ada4] text-[16px] leading-[1.4]">
+                    We're available Monday–Friday..
+                  </span>
+                  <a
+                    href="tel:+2347043239289"
+                    className="font-['General_Sans:Regular',sans-serif] text-[#239cff] text-[16px] hover:underline"
+                  >
                     +234 704 323 9289
                   </a>
                 </div>
@@ -80,15 +106,23 @@ export function ContactPage({ onNav }: { onNav: (s: string) => void }) {
               <div className="flex gap-4 items-start">
                 <ContactIcon path={contactSvg.p26abea00} viewBox="0 0 23 23" />
                 <div className="flex flex-col gap-1">
-                  <span className="font-['General_Sans:Regular',sans-serif] text-[#fcfaf5] text-[20px] leading-[1.3]">Visit Us</span>
-                  <span className="font-['General_Sans:Regular',sans-serif] text-[#b5ada4] text-[16px] leading-[1.4]">We're available Monday–Friday, 9 AM–6 PM.</span>
-                  <a href="https://www.primewavee.online" target="_blank" rel="noopener noreferrer" className="font-['General_Sans:Regular',sans-serif] text-[#239cff] text-[16px] hover:underline">
+                  <span className="font-['General_Sans:Regular',sans-serif] text-[#fcfaf5] text-[20px] leading-[1.3]">
+                    Visit Us
+                  </span>
+                  <span className="font-['General_Sans:Regular',sans-serif] text-[#b5ada4] text-[16px] leading-[1.4]">
+                    We're available Monday–Friday.
+                  </span>
+                  <a
+                    href="https://www.primewavee.online"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-['General_Sans:Regular',sans-serif] text-[#239cff] text-[16px] hover:underline"
+                  >
                     www.primewavee.online
                   </a>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
